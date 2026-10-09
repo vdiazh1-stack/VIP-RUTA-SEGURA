@@ -1,0 +1,6 @@
+{
+  "name": "VIP Ruta Segura",
+  "description": "Transporte Interprovincial Ejecutivo & Monitoreado en Tiempo Real. Reserva de van Mercedes Sprinter 8 plazas, QR dinámico, Yape/Plin y telemetría SUTRAN.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

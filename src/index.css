@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-surface: #101415;
+  --color-surface-dim: #101415;
+  --color-surface-bright: #363a3b;
+  --color-surface-container-lowest: #0b0f10;
+  --color-surface-container-low: #191c1e;
+  --color-surface-container: #1d2022;
+  --color-surface-container-high: #272a2c;
+  --color-surface-container-highest: #323537;
+  --color-surface-variant: #323537;
+  --color-on-surface: #e0e3e5;
+  --color-on-surface-variant: #c5c6cd;
+  --color-primary: #bac7e1;
+  --color-on-primary: #243145;
+  --color-primary-container: #0b192c;
+  --color-on-primary-container: #75829a;
+  --color-secondary: #aac9f4;
+  --color-on-secondary: #0e3255;
+  --color-secondary-container: #29486d;
+  --color-on-secondary-container: #99b7e2;
+  --color-tertiary: #ffb95f;
+  --color-on-tertiary: #472a00;
+  --color-tertiary-container: #261500;
+  --color-on-tertiary-container: #b57300;
+  --color-tertiary-fixed: #ffddb8;
+  --color-tertiary-fixed-dim: #ffb95f;
+  --color-on-tertiary-fixed: #2a1700;
+  --color-outline: #8f9097;
+  --color-outline-variant: #44474c;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #101415;
+    color: #e0e3e5;
+  }
+  
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* Material symbols outlined alignment */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for clean applet look */
+::-webkit-scrollbar {
+  display: none;
+}
